@@ -9,16 +9,18 @@ import ChipTreeMap from "./ChipTreeMap";
 
 const rng1 = require("./data/moduleList_rng1sub.json");
 const rng2 = require("./data/moduleList_rng2.json");
+const faketb = require("./data/moduleList_faketb.json");
 
 const SHOW_PARENT = TreeSelect.SHOW_PARENT;
 
 class ModuleSelector extends React.Component {
   constructor(props) {
     super(props);
-    const moduleData = mergeModuleList([
-      convertModuleList(rng1)
-      // convertModuleList(rng2)
-    ]);
+    // const moduleData = mergeModuleList([
+    //   convertModuleList(rng1)
+    //   // convertModuleList(rng2)
+    // ]);
+    const moduleData = convertModuleList(faketb);
     this.state = {
       value: [],
       chipState: moduleData
@@ -147,8 +149,8 @@ class ModuleSelector extends React.Component {
         ? rowHeadSpanCountList
         : rowHeadSpanCountList.slice(0, -1);
     const totalHeadSpanCount =
-      rowHeadSpanCountList.reduce((l, r) => l + r) +
-      columnHeadSpanCountList.reduce((l, r) => l + r) +
+      [0].concat(rowHeadSpanCountList).reduce((l, r) => l + r) +
+      [0].concat(columnHeadSpanCountList).reduce((l, r) => l + r) +
       1;
     const totalHeadSpanHeight = 18 * totalHeadSpanCount;
     const totalHeight = totalChipHeight + totalHeadSpanHeight;
