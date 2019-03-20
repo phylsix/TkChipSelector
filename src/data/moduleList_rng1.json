@@ -1,0 +1,100 @@
+[
+  {
+    "name": [
+      "FPix"
+    ],
+    "level": 0,
+    "numbered": false,
+    "index": null
+  },
+  {
+    "name": [
+      "BmI",
+      "BmO",
+      "BpI",
+      "BpO"
+    ],
+    "level": 1,
+    "numbered": false,
+    "index": null
+  },
+  {
+    "name": [
+      "D"
+    ],
+    "level": 2,
+    "numbered": true,
+    "index": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "name": [
+      "BLD"
+    ],
+    "level": 3,
+    "numbered": true,
+    "index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "name": [
+      "PNL"
+    ],
+    "level": 4,
+    "numbered": true,
+    "index": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": [
+      "RNG"
+    ],
+    "level": 5,
+    "numbered": true,
+    "index": [
+      1
+    ]
+  },
+  {
+    "name": [
+      "C"
+    ],
+    "level": 6,
+    "numbered": true,
+    "index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+]
